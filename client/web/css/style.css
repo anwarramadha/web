@@ -1,0 +1,419 @@
+/* LOGIN AND REGISTER */
+.login {
+	  float: none;
+	  margin:auto;
+	  width: 40%;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+span.error {
+	font-family: sans-serif;
+	font-size: 14px;
+	color:red;
+}
+
+#inputunamelog {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+#inputpasslog {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	width:100%;
+}
+
+input[type=text]:hover {
+	border: 1px solid rgb(74, 134, 232);
+    border-radius: 5px;
+}
+
+input[type=password], select {
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	width:100%;
+}
+
+input[type=password]:hover {
+	border: 1px solid blue;
+    border-radius: 5px;
+}
+
+input[type=email], select {
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	width:100%;
+}
+
+input[type=email]:hover {
+	border: 1px solid rgb(74, 134, 232);
+    border-radius: 5px;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h4 a {
+	text-decoration:none;
+	color:rgb(74, 134, 232);
+}
+
+/* HEADER */
+h1 {
+	text-align:center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.user-logged {
+	float: right;
+	margin-right: 265px;
+	margin-bottom: 5px;
+}
+
+span.user-logged {
+	float: right;
+	font-family: sans-serif;
+	margin-right: 100px;
+	text-align: right;
+}
+
+span a.user {
+	color:rgb(152, 0, 0);
+	font-family: 'Montserrat', sans-serif;
+}
+
+span a.user:hover {
+	border-bottom: 1px solid rgb(152, 0, 0);
+}
+
+span.user {
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 100px;
+	float: right;
+}
+
+span.user:hover {
+	border-bottom: 1px solid black;
+}
+
+span a {
+	text-decoration: none;
+}
+
+/* MENU */
+ul {
+	width:100%;
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+	color: black;
+	margin-left: 23%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table thead th {
+	border: 1px solid black;
+}
+
+table thead th a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 14.5px;
+    text-decoration: none;
+}
+
+table thead th:hover {
+    background-color: rgb(74, 134, 232);
+}
+
+.title {
+	width: 50%;
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+	text-align:left;
+}
+
+/* GENERAL */
+div {
+    border-radius: 0px;
+    width: 50%;
+}
+
+.btn {
+	display: inline-block;
+	margin-left:1px;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(74, 134, 232);
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	color:white;
+	line-height: 1.42857143;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	float:right;
+}
+
+.btn:hover {
+	background-color: black;
+}
+
+.market {
+	font-family: sans-serif;
+}
+
+hr .catalog-hr {
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.catalog-list {
+	margin-left:25%;
+	margin-right:25%;
+}
+
+.catalog-img {
+	width: 150px;
+	height: 150px;
+	margin-right: 50px;
+	float:left;
+	border: 3px solid grey;
+}
+
+label {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+/* CATALOG */
+.search-catalog {
+	margin-right: 10px;
+	margin-left: 370px;
+	float:left;
+	width: 46%;
+}
+
+.search-cat {
+	background-color:#f7f7f7;
+}
+
+.filter-selector {
+	margin-left: 25%;
+	width: 200px;
+	font-family: sans-serif;
+}
+
+.filter-selector-child {
+	margin-left: 50px;
+}
+
+.date-added {
+	font-family: sans-serif;
+}
+
+.product-name {
+	float:left;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+
+.product-desc {
+	float:left;
+	font-family: sans-serif;
+	font-size: 15px;
+	width: 50%;
+}
+
+.product-cost {
+	float:left;
+	font-family: sans-serif;
+	font-size: 20px;
+	width: 50%;
+}
+
+.catalog-purchase {
+	float: left;
+	font-family: sans-serif;
+	display: block;
+	margin-left: 10%;
+}
+
+.catalog-likes {
+	float: left;
+	font-family: sans-serif;
+	display: block;
+	margin-left: 10%;
+}
+
+.like-catalog {
+	float: right;
+	font-family: sans-serif;
+	margin-right: 20px;
+}
+
+.buy-catalog {
+	float: right;
+	font-family: sans-serif;
+}
+
+.buy-catalog a {
+	color: #4CAF50;
+}
+
+.buy-catalog:hover {
+	border-bottom: 1px solid #4CAF50;
+}
+
+/* BUY */
+input .quantity-input {
+	width: 20%;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+/* SALES AND PURCHASES */
+.sales-info {
+	float:left;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+.delivery {
+	float: right;
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-left: 50%;
+}
+
+.product-buyer {
+	float: left;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+.form-control {
+  display: block;
+  width: 175%;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #ededed;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+  
+.col-md-6 {
+float: left;
+width: 100%;
+}
+
+.register {
+  float:left;
+  width: 40%;
+  margin:auto;
+  margin-right: 100px;
+}
+  
+.post-wrapper-top {
+		background:#f5f5f5;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 0;
+		border-bottom: 3px solid #efefef;
+		margin-bottom: 0;
+		padding:0;
+		position: relative;
+		text-align: left;
+		width:100%;
+		z-index:-1;
+}
+
+.post-wrapper-top h2 {
+		border-bottom: 3px solid #4CAF50;
+		display: inline-block;
+		font-size:24px;
+		padding: 30px 0;
+		color:#222222;
+		position: relative;
+		margin-bottom:-3px;
+		margin-left: 100px;
+}
+
+.jt-shadow {
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+		-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.bar-top {
+	border-bottom: 1px solid #4CAF50;
+	float:right; 
+	margin-right: 150px;
+	font-family: sans-serif;
+	text-align : right;
+}
+
+.bar-top a {
+	text-decoration:none;
+	color: #4CAF50;
+}
+
+.inputbutton {
+	width: 50px;
+	float:left;
+	margin-top: 8px;
+}
+
+.your-product {
+	width:100%;
+}

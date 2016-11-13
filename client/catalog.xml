@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8081/WebService/marketplace_webservice?wsdl" uri="src/conf/xml-resources/web-service-references/marketplace_webservice/wsdl/localhost_8081/WebService/marketplace_webservice.wsdl"/>
+    <system systemId="http://localhost:8081/WebService/marketplace_webservice?xsd=1" uri="src/conf/xml-resources/web-service-references/marketplace_webservice/wsdl/localhost_8081/WebService/marketplace_webservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:8081/IdentityService/userWS?wsdl" uri="src/conf/xml-resources/web-service-references/userWS/wsdl/localhost_8081/IdentityService/userWS.wsdl"/>
+    <system systemId="http://localhost:8081/IdentityService/userWS?xsd=1" uri="src/conf/xml-resources/web-service-references/userWS/wsdl/localhost_8081/IdentityService/userWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8081/WebService/marketplaceWS?wsdl" uri="src/conf/xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8081/WebService/marketplaceWS.wsdl"/>
+    <system systemId="http://localhost:8081/WebService/marketplaceWS?xsd=1" uri="src/conf/xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8081/WebService/marketplaceWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8081/IdentityService/usersWS?wsdl" uri="src/conf/xml-resources/web-service-references/usersWS/wsdl/localhost_8081/IdentityService/usersWS.wsdl"/>
+    <system systemId="http://localhost:8081/IdentityService/usersWS?xsd=1" uri="src/conf/xml-resources/web-service-references/usersWS/wsdl/localhost_8081/IdentityService/usersWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/WebService/marketplaceWS?wsdl" uri="src/conf/xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8082/WebService/marketplaceWS.wsdl"/>
+    <system systemId="http://localhost:8082/WebService/marketplaceWS?xsd=1" uri="src/conf/xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8082/WebService/marketplaceWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/WebService/specificCatalogWS?wsdl" uri="src/conf/xml-resources/web-service-references/specificCatalogWS/wsdl/localhost_8082/WebService/specificCatalogWS.wsdl"/>
+    <system systemId="http://localhost:8082/WebService/specificCatalogWS?xsd=1" uri="src/conf/xml-resources/web-service-references/specificCatalogWS/wsdl/localhost_8082/WebService/specificCatalogWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/WebService/purchasesWS?wsdl" uri="src/conf/xml-resources/web-service-references/purchasesWS/wsdl/localhost_8082/WebService/purchasesWS.wsdl"/>
+    <system systemId="http://localhost:8082/WebService/purchasesWS?xsd=1" uri="src/conf/xml-resources/web-service-references/purchasesWS/wsdl/localhost_8082/WebService/purchasesWS.xsd_1.xsd"/>
+</catalog>

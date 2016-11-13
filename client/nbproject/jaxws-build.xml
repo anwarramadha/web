@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-marketplaceWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/marketplaceWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/marketplaceWS" destdir="${build.generated.dir}/jax-wsCache/marketplaceWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8082/WebService/marketplaceWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8082/WebService/marketplaceWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8082/WebService/marketplaceWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/marketplaceWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/marketplaceWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-marketplaceWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/marketplace"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/marketplaceWS"/>
+    </target>
+    <target name="wsimport-client-usersWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/usersWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/usersWS" destdir="${build.generated.dir}/jax-wsCache/usersWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/usersWS/wsdl/localhost_8081/IdentityService/usersWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8081/IdentityService/usersWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/usersWS/wsdl/localhost_8081/IdentityService/usersWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/usersWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/usersWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-usersWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/users"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/usersWS"/>
+    </target>
+    <target name="wsimport-client-specificCatalogWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/specificCatalogWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/specificCatalogWS" destdir="${build.generated.dir}/jax-wsCache/specificCatalogWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/specificCatalogWS/wsdl/localhost_8082/WebService/specificCatalogWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8082/WebService/specificCatalogWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/specificCatalogWS/wsdl/localhost_8082/WebService/specificCatalogWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/specificCatalogWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/specificCatalogWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-specificCatalogWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/marketplace"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/specificCatalogWS"/>
+    </target>
+    <target name="wsimport-client-purchasesWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/purchasesWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/purchasesWS" destdir="${build.generated.dir}/jax-wsCache/purchasesWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/purchasesWS/wsdl/localhost_8082/WebService/purchasesWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8082/WebService/purchasesWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/purchasesWS/wsdl/localhost_8082/WebService/purchasesWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/purchasesWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/purchasesWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-purchasesWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/marketplace"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/purchasesWS"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-marketplaceWS, wsimport-client-usersWS, wsimport-client-specificCatalogWS, wsimport-client-purchasesWS"/>
+</project>

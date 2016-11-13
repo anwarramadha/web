@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://marketplace/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://marketplace/">
+
+<xs:element name="ClassNotFoundException" type="tns:ClassNotFoundException"/>
+
+<xs:element name="Purchases" type="tns:purchases"/>
+
+<xs:element name="getPurchases" type="tns:getPurchases"/>
+
+<xs:element name="getPurchasesResponse" type="tns:getPurchasesResponse"/>
+
+<xs:element name="getSales" type="tns:getSales"/>
+
+<xs:element name="getSalesResponse" type="tns:getSalesResponse"/>
+
+<xs:complexType name="getPurchases">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPurchasesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:purchases" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="purchases">
+<xs:sequence>
+<xs:element name="purchaseid" type="xs:int"/>
+<xs:element name="uname_buyer" type="xs:string"/>
+<xs:element name="uname_seller" type="xs:string"/>
+<xs:element name="catalogname" type="xs:string"/>
+<xs:element name="catalogprice" type="xs:int"/>
+<xs:element name="catalogphoto" type="xs:string"/>
+<xs:element name="fullname" type="xs:string"/>
+<xs:element name="address" type="xs:string"/>
+<xs:element name="postal" type="xs:string"/>
+<xs:element name="phone" type="xs:string"/>
+<xs:element name="creditcard" type="xs:string"/>
+<xs:element name="verification_number" type="xs:string"/>
+<xs:element name="quantity" type="xs:int"/>
+<xs:element name="timestamp" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ClassNotFoundException">
+<xs:sequence>
+<xs:element name="exception" type="tns:throwable" minOccurs="0"/>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="throwable">
+<xs:sequence>
+<xs:element name="stackTrace" type="tns:stackTraceElement" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stackTraceElement" final="extension restriction">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getSales">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSalesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:purchases" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
