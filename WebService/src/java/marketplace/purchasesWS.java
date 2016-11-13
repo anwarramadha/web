@@ -67,10 +67,13 @@ public class purchasesWS {
         ArrayList<Purchases> salesList = new ArrayList<>();
         try {
             try (Statement st = connectDB().createStatement ()) {
+                System.out.println("Persiapan Query");
                 String query = "SELECT * FROM purchases WHERE uname_seller='" + username + "' ORDER BY timestamp DESC;";
                 System.out.println("jalan");
                 try (ResultSet rs = st.executeQuery(query)) {
+                    System.out.println("ResultSet");
                     while (rs.next()) {
+                        System.out.println("loop");
                         salesList.add (new Purchases(
                             rs.getInt("purchaseid"),
                             rs.getString("uname_buyer"),

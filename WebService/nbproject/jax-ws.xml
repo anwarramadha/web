@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
+    <service name="updateProductWS">
+      <implementation-class>marketplace.updateProductWS</implementation-class>
+    </service>
+    <service name="purchasesWS">
+      <implementation-class>marketplace.purchasesWS</implementation-class>
+    </service>
+    <service name="myproductWS">
+      <implementation-class>marketplace.myproductWS</implementation-class>
+    </service>
     <service name="marketplaceWS">
       <implementation-class>marketplace.marketplaceWS</implementation-class>
     </service>
     <service name="specificCatalogWS">
       <implementation-class>marketplace.specificCatalogWS</implementation-class>
     </service>
-    <service name="purchasesWS">
-      <implementation-class>marketplace.purchasesWS</implementation-class>
+    <service name="deleteproductWS">
+      <implementation-class>marketplace.deleteproductWS</implementation-class>
+    </service>
+    <service name="addWS">
+      <implementation-class>marketplace.addWS</implementation-class>
+    </service>
+    <service name="addproductWS">
+      <implementation-class>marketplace.addproductWS</implementation-class>
     </service>
   </services>
   <clients>

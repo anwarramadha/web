@@ -4,12 +4,6 @@
 <xsd:import namespace="http://users/" schemaLocation="http://localhost:8081/IdentityService/usersWS?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="addLike">
-<part name="parameters" element="tns:addLike"/>
-</message>
-<message name="addLikeResponse">
-<part name="parameters" element="tns:addLikeResponse"/>
-</message>
 <message name="getUserData">
 <part name="parameters" element="tns:getUserData"/>
 </message>
@@ -28,11 +22,13 @@
 <message name="ParseException">
 <part name="fault" element="tns:ParseException"/>
 </message>
+<message name="addLike">
+<part name="parameters" element="tns:addLike"/>
+</message>
+<message name="addLikeResponse">
+<part name="parameters" element="tns:addLikeResponse"/>
+</message>
 <portType name="usersWS">
-<operation name="addLike">
-<input wsam:Action="http://users/usersWS/addLikeRequest" message="tns:addLike"/>
-<output wsam:Action="http://users/usersWS/addLikeResponse" message="tns:addLikeResponse"/>
-</operation>
 <operation name="getUserData">
 <input wsam:Action="http://users/usersWS/getUserDataRequest" message="tns:getUserData"/>
 <output wsam:Action="http://users/usersWS/getUserDataResponse" message="tns:getUserDataResponse"/>
@@ -44,18 +40,13 @@
 <fault message="tns:ClassNotFoundException" name="ClassNotFoundException" wsam:Action="http://users/usersWS/isTokenValid/Fault/ClassNotFoundException"/>
 <fault message="tns:ParseException" name="ParseException" wsam:Action="http://users/usersWS/isTokenValid/Fault/ParseException"/>
 </operation>
+<operation name="addLike">
+<input wsam:Action="http://users/usersWS/addLikeRequest" message="tns:addLike"/>
+<output wsam:Action="http://users/usersWS/addLikeResponse" message="tns:addLikeResponse"/>
+</operation>
 </portType>
 <binding name="usersWSPortBinding" type="tns:usersWS">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="addLike">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
 <operation name="getUserData">
 <soap:operation soapAction=""/>
 <input>
@@ -82,6 +73,15 @@
 <fault name="ParseException">
 <soap:fault name="ParseException" use="literal"/>
 </fault>
+</operation>
+<operation name="addLike">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
 </operation>
 </binding>
 <service name="usersWS">

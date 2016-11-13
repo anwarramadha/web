@@ -8,6 +8,14 @@
     <system systemId="http://localhost:8081/WebService/marketplaceWS?xsd=1" uri="src/conf/xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8081/WebService/marketplaceWS.xsd_1.xsd"/>
     <system systemId="http://localhost:8081/IdentityService/usersWS?wsdl" uri="src/conf/xml-resources/web-service-references/usersWS/wsdl/localhost_8081/IdentityService/usersWS.wsdl"/>
     <system systemId="http://localhost:8081/IdentityService/usersWS?xsd=1" uri="src/conf/xml-resources/web-service-references/usersWS/wsdl/localhost_8081/IdentityService/usersWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/WebService/deleteproductWS?wsdl" uri="src/conf/xml-resources/web-service-references/deleteproductWS/wsdl/localhost_8082/WebService/deleteproductWS.wsdl"/>
+    <system systemId="http://localhost:8082/WebService/deleteproductWS?xsd=1" uri="src/conf/xml-resources/web-service-references/deleteproductWS/wsdl/localhost_8082/WebService/deleteproductWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/WebService/updateProductWS?wsdl" uri="src/conf/xml-resources/web-service-references/updateProductWS/wsdl/localhost_8082/WebService/updateProductWS.wsdl"/>
+    <system systemId="http://localhost:8082/WebService/updateProductWS?xsd=1" uri="src/conf/xml-resources/web-service-references/updateProductWS/wsdl/localhost_8082/WebService/updateProductWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/WebService/myproductWS?wsdl" uri="src/conf/xml-resources/web-service-references/myproductWS/wsdl/localhost_8082/WebService/myproductWS.wsdl"/>
+    <system systemId="http://localhost:8082/WebService/myproductWS?xsd=1" uri="src/conf/xml-resources/web-service-references/myproductWS/wsdl/localhost_8082/WebService/myproductWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8082/WebService/addproductWS?wsdl" uri="src/conf/xml-resources/web-service-references/addproductWS/wsdl/localhost_8082/WebService/addproductWS.wsdl"/>
+    <system systemId="http://localhost:8082/WebService/addproductWS?xsd=1" uri="src/conf/xml-resources/web-service-references/addproductWS/wsdl/localhost_8082/WebService/addproductWS.xsd_1.xsd"/>
     <system systemId="http://localhost:8082/WebService/marketplaceWS?wsdl" uri="src/conf/xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8082/WebService/marketplaceWS.wsdl"/>
     <system systemId="http://localhost:8082/WebService/marketplaceWS?xsd=1" uri="src/conf/xml-resources/web-service-references/marketplaceWS/wsdl/localhost_8082/WebService/marketplaceWS.xsd_1.xsd"/>
     <system systemId="http://localhost:8082/WebService/specificCatalogWS?wsdl" uri="src/conf/xml-resources/web-service-references/specificCatalogWS/wsdl/localhost_8082/WebService/specificCatalogWS.wsdl"/>

@@ -4,36 +4,36 @@
 <xsd:import namespace="http://marketplace/" schemaLocation="http://localhost:8082/WebService/purchasesWS?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="getPurchases">
-<part name="parameters" element="tns:getPurchases"/>
-</message>
-<message name="getPurchasesResponse">
-<part name="parameters" element="tns:getPurchasesResponse"/>
-</message>
-<message name="ClassNotFoundException">
-<part name="fault" element="tns:ClassNotFoundException"/>
-</message>
 <message name="getSales">
 <part name="parameters" element="tns:getSales"/>
 </message>
 <message name="getSalesResponse">
 <part name="parameters" element="tns:getSalesResponse"/>
 </message>
+<message name="ClassNotFoundException">
+<part name="fault" element="tns:ClassNotFoundException"/>
+</message>
+<message name="getPurchases">
+<part name="parameters" element="tns:getPurchases"/>
+</message>
+<message name="getPurchasesResponse">
+<part name="parameters" element="tns:getPurchasesResponse"/>
+</message>
 <portType name="purchasesWS">
-<operation name="getPurchases">
-<input wsam:Action="http://marketplace/purchasesWS/getPurchasesRequest" message="tns:getPurchases"/>
-<output wsam:Action="http://marketplace/purchasesWS/getPurchasesResponse" message="tns:getPurchasesResponse"/>
-<fault message="tns:ClassNotFoundException" name="ClassNotFoundException" wsam:Action="http://marketplace/purchasesWS/getPurchases/Fault/ClassNotFoundException"/>
-</operation>
 <operation name="getSales">
 <input wsam:Action="http://marketplace/purchasesWS/getSalesRequest" message="tns:getSales"/>
 <output wsam:Action="http://marketplace/purchasesWS/getSalesResponse" message="tns:getSalesResponse"/>
 <fault message="tns:ClassNotFoundException" name="ClassNotFoundException" wsam:Action="http://marketplace/purchasesWS/getSales/Fault/ClassNotFoundException"/>
 </operation>
+<operation name="getPurchases">
+<input wsam:Action="http://marketplace/purchasesWS/getPurchasesRequest" message="tns:getPurchases"/>
+<output wsam:Action="http://marketplace/purchasesWS/getPurchasesResponse" message="tns:getPurchasesResponse"/>
+<fault message="tns:ClassNotFoundException" name="ClassNotFoundException" wsam:Action="http://marketplace/purchasesWS/getPurchases/Fault/ClassNotFoundException"/>
+</operation>
 </portType>
 <binding name="purchasesWSPortBinding" type="tns:purchasesWS">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="getPurchases">
+<operation name="getSales">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -45,7 +45,7 @@
 <soap:fault name="ClassNotFoundException" use="literal"/>
 </fault>
 </operation>
-<operation name="getSales">
+<operation name="getPurchases">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

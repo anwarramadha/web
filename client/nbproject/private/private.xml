@@ -3,18 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/WEB-INF/wsdl/localhost_8081/IdentityService/usersWS.wsdl</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/js/catalog.js</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/WEB-INF/jax-ws-catalog.xml</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/catalog.jsp</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/js/init.js</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/route.jsp</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/css/style.css</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/src/java/showcatalog.java</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/js/jquery.js</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/confirm.jsp</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/login.jsp</file>
-            <file>file:/D:/belajar/WEB/tubes_java/project/Client/web/register.jsp</file>
+            <file>file:/D:/buat%20push/Client/web/add.jsp</file>
+            <file>file:/D:/buat%20push/Client/src/java/showpurchases.java</file>
+            <file>file:/D:/buat%20push/Client/src/java/uploadPhoto.java</file>
+            <file>file:/D:/buat%20push/Client/src/java/showcatalog.java</file>
+            <file>file:/D:/buat%20push/Client/web/js/init.js</file>
+            <file>file:/D:/buat%20push/Client/build/generated-sources/jax-ws/marketplace/MarketplaceWS_Service.java</file>
+            <file>file:/D:/buat%20push/Client/src/java/editproduct.java</file>
+            <file>file:/D:/buat%20push/Client/web/edit.jsp</file>
+            <file>file:/D:/buat%20push/Client/web/newjsp.jsp</file>
+            <file>file:/D:/buat%20push/Client/src/java/addProduct.java</file>
+            <file>file:/D:/buat%20push/Client/web/confirm.jsp</file>
+            <file>file:/D:/buat%20push/Client/web/product.jsp</file>
+            <file>file:/D:/buat%20push/Client/src/java/showproduct.java</file>
+            <file>file:/D:/buat%20push/Client/src/java/updateproduct.java</file>
+            <file>file:/D:/buat%20push/Client/src/java/deleteproduct.java</file>
+            <file>file:/D:/buat%20push/Client/src/java/showsales.java</file>
         </group>
     </open-files>
 </project-private>

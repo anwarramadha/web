@@ -64,6 +64,7 @@ public class showsales extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             try {
                 java.util.List<Purchases> result = getSales(uname);
+                System.out.println("try");
                 result.forEach(new Consumer<Purchases>() {
                     @Override
                     public void accept(Purchases answer) {
@@ -94,6 +95,7 @@ public class showsales extends HttpServlet {
                                 + "</span></td></tr></table><br><br><hr></form>");
                     }   
                 });
+                System.out.println("pass");
             } catch (Exception ex) { 
                 out.print("haloException: " + ex); 
             }

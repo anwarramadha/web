@@ -12,13 +12,13 @@
 
 <xs:element name="getSalesResponse" type="tns:getSalesResponse"/>
 
-<xs:complexType name="getPurchases">
+<xs:complexType name="getSales">
 <xs:sequence>
 <xs:element name="username" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="getPurchasesResponse">
+<xs:complexType name="getSalesResponse">
 <xs:sequence>
 <xs:element name="return" type="tns:purchases" minOccurs="0" maxOccurs="unbounded"/>
 </xs:sequence>
@@ -60,13 +60,13 @@
 <xs:sequence/>
 </xs:complexType>
 
-<xs:complexType name="getSales">
+<xs:complexType name="getPurchases">
 <xs:sequence>
 <xs:element name="username" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="getSalesResponse">
+<xs:complexType name="getPurchasesResponse">
 <xs:sequence>
 <xs:element name="return" type="tns:purchases" minOccurs="0" maxOccurs="unbounded"/>
 </xs:sequence>
